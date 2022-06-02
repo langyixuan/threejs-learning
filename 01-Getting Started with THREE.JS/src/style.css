@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@800&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body
+{
+    height: 100vh;
+    font-family: 'Orbitron', 'Poppins';
+    background-color: rgb(21, 21, 21);
+    overflow: hidden;
+}
+
+.webgl
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    outline: none;
+    opacity: 0.95;
+    mix-blend-mode:exclusion;
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    font-size: 10rem;
+    color: white;
+    /* -webkit-text-stroke: 2px rgb(11, 54, 68); */
+    /* text-transform: uppercase; */
+}
