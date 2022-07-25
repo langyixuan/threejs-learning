@@ -1,5 +1,6 @@
 .DS_Store
 node_modules
+.vercel
 /dist
 .cache
 
@@ -11,3 +12,5 @@ node_modules
 *.njsproj
 *.sln
 *.sw?
+
+.vercel
