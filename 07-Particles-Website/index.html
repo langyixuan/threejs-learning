@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Particles Website</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+		*{
+			 margin: 0; 
+			 padding: 0;
+		}
+		canvas{
+			display: block;
+		}
+		body{
+			overflow: hidden;
+			width: 100vw;
+			height: 100vh;
+		}
+
+		@keyframes scaleObject {
+			0% {
+				width: 5rem;
+				height: 5rem;
+			}
+			50% {
+				width: 10rem;
+				height: 10rem;
+			}
+			100% {
+				width: 5rem;
+		 		height: 5rem;
+			}
+		}
+		
+		.circle {
+			position: absolute; 
+			top: 50%; 
+			left: 50%; 
+			width: 5rem;
+			height: 5rem;
+			transform: translate(-50%, -50%); 
+			background-color: transparent;
+			border-radius: 50%;
+			border: 200px solid #ccc;
+			mix-blend-mode:difference;
+			animation: scaleObject 10s infinite;
+		}
+
+		.word {
+			width: 100%;
+			height: 100%;
+			position: absolute; 
+			color: #ccc;
+			font-size: 2rem; 
+			top: 0%;
+			left: 0%;
+			font-family: 'Poiret One', cursive;
+			mix-blend-mode: hue;
+			overflow: hidden;
+		}
+
+		@keyframes toRight {
+			0% {
+				transform: translateX(0);
+			}
+			50% {
+				transform: translateX(200px);
+
+			}
+			100% {
+				transform: translateX(0);
+			}
+		}
+
+		@keyframes toLeft {
+			0% {
+				transform: translateX(0);
+			}
+			50% {
+				transform: translate(-200px);
+			}
+			100% {
+				transform: translateX(0);
+			}
+		}
+
+		.word p:nth-child(odd) {
+			transition: all 0.5s ease-in-out;
+			animation: toRight 15s infinite;
+			color: transparent;
+			-webkit-text-stroke-width: 2px;
+  		-webkit-text-stroke-color: rgb(255, 255, 255);
+			text-transform: uppercase;
+			padding: 20px;
+			width: 1000vw;
+		}
+
+		.word p:nth-child(even) {
+			transition: all 0.5s ease-in-out;
+			animation: toLeft 10s infinite;
+			text-transform: uppercase;
+			padding: 20px;
+			width: 1000vw;
+		}
+	</style>
+</head>
+<body>
+	<div class="word">
+		<p>The good seaman is known in bad weather.The good seaman is known in bad weatherThe good seaman is known in bad weather</p>
+		<p>When all else is lost the future still remains.When all else is lost the future still remainsWhen all else is lost the future still remainsWhen all else is lost the future still remains</p>
+		<p>The good seaman is known in bad weather.The good seaman is known in bad weatherThe good seaman is known in bad weather</p>
+		<p>When all else is lost the future still remains.When all else is lost the future still remainsWhen all else is lost the future still remainsWhen all else is lost the future still remains</p>
+		<p>The good seaman is known in bad weather.The good seaman is known in bad weatherThe good seaman is known in bad weather</p>
+		<p>When all else is lost the future still remains.When all else is lost the future still remainsWhen all else is lost the future still remainsWhen all else is lost the future still remains</p>
+		<p>The good seaman is known in bad weather.The good seaman is known in bad weatherThe good seaman is known in bad weather</p>
+		<p>When all else is lost the future still remains.When all else is lost the future still remainsWhen all else is lost the future still remainsWhen all else is lost the future still remains</p>
+		<p>The good seaman is known in bad weather.The good seaman is known in bad weatherThe good seaman is known in bad weather</p>
+		<p>When all else is lost the future still remains.When all else is lost the future still remainsWhen all else is lost the future still remainsWhen all else is lost the future still remains</p>
+		<p>The good seaman is known in bad weather.The good seaman is known in bad weatherThe good seaman is known in bad weather</p>
+		<p>When all else is lost the future still remains.When all else is lost the future still remainsWhen all else is lost the future still remainsWhen all else is lost the future still remains</p>
+	</div>
+	<div class="circle"></div>
+
+	<div id="container"></div>
+	<script src="./app.js"></script>
+</body>
+</html>
