@@ -2,4 +2,4 @@
 
 - [Live](https://ocean-waves.vercel.app/)
 
-![bg](https://imgtu.com/i/vG4MxU)
+![show](https://s1.ax1x.com/2022/08/11/vG4MxU.png)
