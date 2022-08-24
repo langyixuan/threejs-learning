@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>name your project</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Tapestry&display=swap');
+		*{box-sizing: border-box; margin: 0; padding: 0;}
+		canvas{display: block;}
+		body{width: 100vw; height: 100vh; overflow: hidden;}
+		#container{position: relative; display: flex; justify-content: center; align-items: center;}
+		.text{font-size: 8rem; color: #fff; position: absolute; mix-blend-mode: exclusion; font-family: 'Tapestry', cursive;}
+		.desc {position: absolute; bottom: 20px; left: 20px; font-size: 1.2rem; color: #fff; font-family: 'Tapestry', cursive; mix-blend-mode: exclusion; border-radius: 10px; border: 2px solid #fff; padding: 10px;}
+		.desc span { display: block;}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<h1 class="text"></h1>
+		<div class="desc">
+			<span>❀ Posted: 2022.8.20</span>
+			<span>❀ Raymarching Simple Exercise</span>
+		</div>
+	</div>
+	<script src="./app.js"></script>
+	<script src="https://cdn.rawgit.com/bradley/Blotter/master/build/blotter.min.js"></script>
+	<script src="https://rawgit.com/bradley/Blotter/master/build/materials/liquidDistortMaterial.js"></script>
+	<script>
+		 container = document.querySelector('.text');
+		 const text = new Blotter.Text("LIQUID CUBE", {
+		 		family: "Tapestry",
+		 		size: 180,
+		 		fill: "#fff"
+		 });
+		 
+		 let material = new Blotter.LiquidDistortMaterial();
+		 
+		 material.uniforms.uSpeed.value = 0.15;
+		 material.uniforms.uVolatility.value = 0.1;
+		 material.uniforms.uSeed.value = 0.1;
+		 
+		 let blotter = new Blotter(material, {
+		 		texts: text
+		 });
+		 let scope = blotter.forText(text);
+		 scope.appendTo(container);
+	</script>
+
+	<!-- <script src="https://cdn.rawgit.com/bradley/Blotter/master/build/blotter.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Blotter/0.1.0/materials/channelSplitMaterial.min.js"></script>
+	<script>
+
+    container = document.querySelector('.text')
+
+    var text = new Blotter.Text("CODEGRID", {
+        family: "serif",
+        size: 150,
+        fill: "#000",
+        paddingLeft: 80,
+        paddingRight: 80,
+        paddingTop: 80,
+        paddingBottom: 80
+    })
+
+    var material = new Blotter.ChannelSplitMaterial();
+    material.uniforms.uOffset.value = 0.05;
+    material.uniforms.uRotation.value = 50;
+    material.uniforms.uApplyBlur.value = 1;
+    material.uniforms.uAnimateNoise.value = 0.3;
+
+    var blotter = new Blotter(material, {
+        texts: text
+    })
+
+    var scope = blotter.forText(text);
+
+    scope.appendTo(container);
+
+    // Add mousemove effect
+
+    document.onmousemove = moveIt;
+    function moveIt(event) {
+        material.uniforms.uRotation.value = (event.clientX * .1);
+        material.uniforms.uOffset.value = (event.clientX * 0.0001);
+    }
+
+</script> -->
+
+<!-- <script src="https://cdn.rawgit.com/bradley/Blotter/master/build/blotter.min.js"></script>
+<script src="https://cdn.rawgit.com/bradley/Blotter/3007fe6e/build/materials/fliesMaterial.js"></script>
+<script>
+
+	container = document.querySelector('.text');
+
+	var text = new Blotter.Text("CODEGRID", {
+			family: "serif",
+			size: 180,
+			fill: "#fff",
+			paddingLeft: 80,
+			paddingRight: 80,
+			paddingTop: 80,
+			paddingBottom: 80
+	});
+
+	var material = new Blotter.FliesMaterial();
+	material.uniforms.uPointCellWidth.value = 0.01;
+	material.uniforms.uPointRadius.value = 0.3;
+	material.uniforms.uSpeed.value = 3;
+
+	var blotter = new Blotter(material, {
+			texts: text
+	});
+
+	var scope = blotter.forText(text);
+	scope.appendTo(container);
+
+</script> -->
+</body>
+</html>
