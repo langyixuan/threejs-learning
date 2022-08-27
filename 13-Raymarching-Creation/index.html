@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Raymarching Exercise</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+		*{box-sizing: border-box; margin: 0; padding: 0;}
+		canvas{display: block;}
+		#container {position: relative;  display: flex; justify-content: center; align-items: center;}
+		body {width: 100vw; height: 100vh; overflow: hidden; }
+		.text { font-size: 4rem; color:#ccc;  position: absolute; mix-blend-mode:exclusion; font-family: 'Nosifer', cursive;}
+		.desc {position: absolute; bottom: 20px; left: 20px; font-size: 1rem; color: #fff; font-family: 'Nosifer', cursive; mix-blend-mode: exclusion; border-radius: 10px; border: 2px solid #fff; padding: 10px;}
+		.desc span { display: block;}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div class="text">
+			<!-- <h1>DEEP RHYTHM</h1> -->
+		</div>
+		<div class="desc">
+			<span>Posted: 2022.8.25</span>
+			<span>Raymarching Simple Exercise2</span>
+		</div>
+	</div>
+	<script src="./app.js"></script>
+
+	<script src="https://cdn.rawgit.com/bradley/Blotter/master/build/blotter.min.js"></script>
+	<script src="https://cdn.rawgit.com/bradley/Blotter/3007fe6e/build/materials/fliesMaterial.js"></script>
+	<script>
+		container = document.querySelector('.text');
+		var text = new Blotter.Text("DEEP RHYTHM", {
+				family: "Nosifer",
+				size: 120,
+				fill: "#cbc",
+				paddingLeft: 10,
+				paddingRight: 10,
+				paddingTop: 10,
+				paddingBottom: 10
+		});
+		var material = new Blotter.FliesMaterial();
+		material.uniforms.uPointCellWidth.value = 0.01;
+		material.uniforms.uPointRadius.value = 1.0;
+		material.uniforms.uSpeed.value = 6;
+		var blotter = new Blotter(material, {
+				texts: text
+		});
+		
+		container.addEventListener('mouseenter', () => {
+			material.uniforms.uPointCellWidth.value = 0.013;
+			material.uniforms.uPointRadius.value = 3.0;
+		
+		})
+	
+		container.addEventListener('mouseleave', () => {
+			material.uniforms.uPointCellWidth.value = 0.01;
+			material.uniforms.uPointRadius.value = 1.0;
+		})
+		var scope = blotter.forText(text);
+		scope.appendTo(container);
+	</script>
+</body>
+</html>
