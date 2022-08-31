@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Curl Tubes</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+		*{box-sizing: border-box; margin: 0; padding: 0;}
+		canvas{display: block;}
+		body { width: 100vw; height: 100vh; overflow: hidden;}
+		/* .cursor {
+			background-color: aqua;
+			width: 20px;
+			height: 20px;
+			position: absolute;
+			top: 0;
+			left: 0;
+			pointer-events: none;
+			z-index: 1000;
+		} */
+		.text {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			font-size: 5rem;
+			color: rgb(236, 241, 227);
+			font-family: 'Nosifer', cursive; 
+			/* mix-blend-mode:hue; */
+
+		}
+		.desc {
+			position: absolute; 
+			bottom: 20px; 
+			left: 20px; 
+			font-size: 0.5rem; 
+			color: #fff; 
+			font-family: 'Nosifer', cursive; 
+			mix-blend-mode: exclusion; 
+			border-radius: 10px; 
+			border: 2px solid #fff; 
+			padding: 10px;
+		}
+		.desc span { display: block;}
+	</style>
+</head>
+<body>
+	<div class="text"></div>
+	<div class="desc">
+		<span>Posted: 2022.8.28</span>
+		<span>Curl Tubes inspiration by lusion.co</span>
+	</div>
+	<div class="cursor"></div>
+	<div id="container"></div>
+	<script src="./app.js"></script>
+
+	<script src="https://cdn.rawgit.com/bradley/Blotter/master/build/blotter.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Blotter/0.1.0/materials/rollingDistortMaterial.js"></script>
+	<script>
+		var innerText = document.querySelector('.text')
+    var text = new Blotter.Text("Phantasmagoria", {
+        family: 'Nosifer',
+        size: 100,
+        fill: "white"
+    })
+    let material = new Blotter.RollingDistortMaterial();
+    material.uniforms.uSineDistortSpread.value = 0.035;
+    material.uniforms.uSineDistortCycleCount.value = 2;
+    material.uniforms.uSineDistortAmplitude.value = 0.03;
+    material.uniforms.uNoiseDistortVolatility.value = 15;
+    material.uniforms.uNoiseDistortAmplitude.value = 0.01;
+    material.uniforms.uRotation.value = 170;
+    material.uniforms.uSpeed.value = 0.08
+    // these all properties u can set on Blotter.js Materials Documentatio
+    let blotter = new Blotter(material, {
+        texts: text
+    })
+		innerText.addEventListener('mouseenter', e => {
+			material.uniforms.uNoiseDistortVolatility.value = 150;
+		})
+		innerText.addEventListener('mouseleave', e => {
+			material.uniforms.uNoiseDistortVolatility.value = 15;
+		})
+    let scope = blotter.forText(text);
+    scope.appendTo(innerText);
+	</script>
+</body>
+</html>
