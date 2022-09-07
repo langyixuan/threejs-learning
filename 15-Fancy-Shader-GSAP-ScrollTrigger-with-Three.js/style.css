@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Goldman&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+*{
+  box-sizing: border-box; 
+  margin: 0; 
+  padding: 0;
+}
+
+/* custom webkit scrollbar
+ */
+ ::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background: #383838;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(0, 0, 0);
+}
+
+canvas{
+  display: block;
+}
+
+body {
+  width: 100vw; 
+  height: 100vh; 
+  overflow-x: hidden;
+} 
+
+#container {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.text {
+  position: absolute;
+  width: 100vw;
+  padding: 2rem;
+  z-index: 1;
+  text-align: center;
+  mix-blend-mode:hard-light;
+}
+
+.text section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -100PX;
+}
+
+.text h1 {
+  width: 60vw;
+  font-size: 5rem;
+  font-family: 'Goldman', cursive;
+}
+
+.text h1:nth-child(odd) {
+  color: #fff;
+}
+
+.text h1:nth-child(even) {
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(255, 255, 255);
+}
+
+.text p {
+  width: 70vw;
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  font-weight: 900;
+  line-height: 40px;
+  text-transform: uppercase;
+  mix-blend-mode: exclusion; 
+  margin-top: 20px;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 2px;
+}
+
+.desc {
+  width: 100vw;
+  position: fixed; 
+  bottom: 0; 
+  left: 0;
+  font-size: 0.5rem; 
+  color: rgb(0, 0, 0); 
+  font-family: 'Nosifer', cursive; 
+  mix-blend-mode: exclusion; 
+  padding: 10px;
+  z-index: 100;
+  opacity: 0.8;
+  background-color: #ffffff;
+  will-change: transform;
+  overflow-x: hidden;
+}
+
+.desc p {
+  white-space: nowrap;
+}
+
