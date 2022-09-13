@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+* {
+  box-sizing: border-box; margin: 0; padding: 0;
+}
+
+canvas {
+  display: block;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text1, .text2, .text3{
+  position: absolute;
+  color: #000;
+  font-size: 7rem;
+  opacity: 0.8;
+  text-transform: uppercase;
+  mix-blend-mode:luminosity;
+  font-family: Goldman;
+}
+
+.text2 {
+  transform: translateY(120px) translateX(100px);
+}
+
+.text3 {
+  transform: translateY(-120px) translateX(-100px);
+}
+
+.text1 span, .text3 span {
+  background: linear-gradient(to right, rgb(255, 255, 255), transparent);
+}
+
+.text2 span {
+  background: linear-gradient(to left, #fff, transparent);
+}
+
+.text1 span, .text2 span, .text3 span {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-left: -2.2rem;
+}
+
+.desc {
+  width: 100vw;
+  position: fixed; 
+  bottom: 0; 
+  left: 0;
+  font-size: 0.5rem; 
+  color: rgb(0, 0, 0); 
+  font-family: 'Nosifer', cursive; 
+  mix-blend-mode: exclusion; 
+  padding: 10px;
+  z-index: 100;
+  opacity: 0.8;
+  background-color: #ffffff;
+  will-change: transform;
+  overflow-x: hidden;
+}
+
+.desc p {
+  white-space: nowrap;
+}
+
+
+
