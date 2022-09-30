@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+* {
+  box-sizing: border-box; 
+  margin: 0; 
+  padding: 0;
+}
+
+canvas {
+  display: block;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.text {
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 13rem;
+  color: rgb(255, 255, 255);
+  mix-blend-mode:exclusion;
+  font-family: 'EB Garamond', serif;
+}
+
+.desc {
+  width: 100vw;
+  position: fixed; 
+  bottom: 0; 
+  left: 0;
+  font-size: 0.5rem; 
+  color: rgb(247, 247, 247); 
+  font-family: 'Nosifer', cursive; 
+  /* mix-blend-mode: exclusion;  */
+  padding: 10px;
+  z-index: 100;
+  background-color: #000000;
+  will-change: transform;
+  overflow-x: hidden;
+  opacity: 0.7;
+}
+
+.desc p {
+  white-space: nowrap;
+}

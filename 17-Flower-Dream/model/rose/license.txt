@@ -1,0 +1,11 @@
+Model Information:
+* title:	Rose
+* source:	https://sketchfab.com/3d-models/rose-b5277921b85c43b2a6c1ee92bd63b3dc
+* author:	victorberdugo1 (https://sketchfab.com/victorberdugo1)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Rose" (https://sketchfab.com/3d-models/rose-b5277921b85c43b2a6c1ee92bd63b3dc) by victorberdugo1 (https://sketchfab.com/victorberdugo1) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

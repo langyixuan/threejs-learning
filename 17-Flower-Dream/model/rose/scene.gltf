@@ -1,0 +1,493 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 1183,
+      "max": [
+        319.9118957519531,
+        81.10073852539063,
+        39.514129638671875
+      ],
+      "min": [
+        -182.56671142578125,
+        -499.3621826171875,
+        -1876.3734130859375
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 14196,
+      "componentType": 5126,
+      "count": 1183,
+      "max": [
+        0.996428370475769,
+        0.9862266778945923,
+        0.9998165965080261
+      ],
+      "min": [
+        -0.9922998547554016,
+        -0.9888024926185608,
+        -0.9620410799980164
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 1183,
+      "max": [
+        0.9995005130767822,
+        0.9995004534721375
+      ],
+      "min": [
+        0.0004995167255401611,
+        0.0004995465278625488
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 6048,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 28392,
+      "componentType": 5126,
+      "count": 2660,
+      "max": [
+        463.1918029785156,
+        251.59951782226563,
+        319.8595886230469
+      ],
+      "min": [
+        -358.50054931640625,
+        -498.2329406738281,
+        -4.519073486328125
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 60312,
+      "componentType": 5126,
+      "count": 2660,
+      "max": [
+        0.9982736706733704,
+        0.9983432292938232,
+        0.9997321367263794
+      ],
+      "min": [
+        -0.9993847012519836,
+        -0.9999145269393921,
+        -0.5084226131439209
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 9464,
+      "componentType": 5126,
+      "count": 2660,
+      "max": [
+        0.9995004534721375,
+        0.9995005130767822
+      ],
+      "min": [
+        -0.13401417434215546,
+        0.0004995167255401611
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 24192,
+      "componentType": 5125,
+      "count": 12960,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 92232,
+      "componentType": 5126,
+      "count": 128,
+      "max": [
+        148.2000732421875,
+        27.238739013671875,
+        65.75482177734375
+      ],
+      "min": [
+        -118.26019287109375,
+        -237.05194091796875,
+        -12.6395263671875
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 93768,
+      "componentType": 5126,
+      "count": 128,
+      "max": [
+        0.36279532313346863,
+        0.5404594540596008,
+        -0.7684724926948547
+      ],
+      "min": [
+        -0.6223486661911011,
+        -0.4544619619846344,
+        -0.9985347390174866
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 30744,
+      "componentType": 5126,
+      "count": 128,
+      "max": [
+        0.9995005130767822,
+        0.9995005130767822
+      ],
+      "min": [
+        0.0004995167255401611,
+        0.0004994869232177734
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 76032,
+      "componentType": 5125,
+      "count": 588,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 95304,
+      "componentType": 5126,
+      "count": 508,
+      "max": [
+        184.0096435546875,
+        -63.427001953125,
+        70.83071899414063
+      ],
+      "min": [
+        -97.79277038574219,
+        -623.0450439453125,
+        -2911.013671875
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 101400,
+      "componentType": 5126,
+      "count": 508,
+      "max": [
+        0.9999522566795349,
+        0.9993788003921509,
+        0.9733098149299622
+      ],
+      "min": [
+        -0.9978485107421875,
+        -0.99927818775177,
+        -0.9013491868972778
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 31768,
+      "componentType": 5126,
+      "count": 508,
+      "max": [
+        0.9995005130767822,
+        0.9995005130767822
+      ],
+      "min": [
+        0.0004994869232177734,
+        0.0004994869232177734
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 78384,
+      "componentType": 5125,
+      "count": 3036,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "victorberdugo1 (https://sketchfab.com/victorberdugo1)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/rose-b5277921b85c43b2a6c1ee92bd63b3dc",
+      "title": "Rose"
+    },
+    "generator": "Sketchfab-13.16.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 90528,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 35832,
+      "byteOffset": 90528,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 107496,
+      "byteOffset": 126360,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 233856,
+      "uri": "scene.bin"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "Rose_Leaves",
+      "pbrMetallicRoughness": {
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.6
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "RosePedalsRed",
+      "pbrMetallicRoughness": {
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.6
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "RoseBottom",
+      "pbrMetallicRoughness": {
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.6
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "Rose_Spikes",
+      "pbrMetallicRoughness": {
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.6
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "QuadPatch13_Rose Leaves_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "QuadPatch13_RosePedalsRed_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 5,
+            "POSITION": 4,
+            "TEXCOORD_0": 6
+          },
+          "indices": 7,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "QuadPatch13_RoseBottom_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 9,
+            "POSITION": 8,
+            "TEXCOORD_0": 10
+          },
+          "indices": 11,
+          "material": 2,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "QuadPatch13_Rose Spikes_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 13,
+            "POSITION": 12,
+            "TEXCOORD_0": 14
+          },
+          "indices": 15,
+          "material": 3,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.004781089257449134,
+        0.9999885559082031,
+        0.0,
+        0.0,
+        -0.9999885559082031,
+        -0.004781089257449134,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2
+      ],
+      "matrix": [
+        0.009999999776482582,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.009999999776482582,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.009999999776482582,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "7da4186c09c04fb6955cf8accd61dac1.fbx"
+    },
+    {
+      "children": [
+        3
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        4
+      ],
+      "matrix": [
+        -0.33838859402471233,
+        0.2547678972976191,
+        -0.01068208198099067,
+        0.0,
+        -0.2525836742074502,
+        -0.33246538485682425,
+        0.07207652644946863,
+        0.0,
+        0.034956698189433914,
+        0.06393110854395033,
+        0.4173948628660334,
+        0.0,
+        1.7173274755477905,
+        -3.2047343254089355,
+        -25.631607055664063,
+        1.0
+      ],
+      "name": "QuadPatch13"
+    },
+    {
+      "children": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        -0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        102.899368286133,
+        19.9803428649902,
+        1.0
+      ],
+      "name": "Object_4"
+    },
+    {
+      "mesh": 0,
+      "name": "QuadPatch13_Rose Leaves_0"
+    },
+    {
+      "mesh": 1,
+      "name": "QuadPatch13_RosePedalsRed_0"
+    },
+    {
+      "mesh": 2,
+      "name": "QuadPatch13_RoseBottom_0"
+    },
+    {
+      "mesh": 3,
+      "name": "QuadPatch13_Rose Spikes_0"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}
